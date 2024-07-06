@@ -1,0 +1,880 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Sedan+SC&family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sancreek&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.header {
+    display: flex;
+    background-image: url("touroLogo-transformed.webp");
+    background-size: 90px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    float: left;
+    font-family: "Staatliches", sans-serif;
+    color: white;
+    height: 100px;
+    transition: top 0.3s;
+    width: 100%;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+}
+
+/*Configurando o navbar*/
+.navbar {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+
+}
+
+/*Configurando as LI*/
+.navbar li {
+    /*Espaço entre as letras*/
+    letter-spacing: 1px;
+    margin-right: 72px;
+    font-size: 20px;
+}
+
+/*Designer do botão*/
+a {
+    box-shadow: inset 0 0 0 0 #5294ff;
+    color: #000;
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    text-decoration: none;
+
+}
+
+/*Configurando Animação*/
+a:hover {
+    box-shadow: inset 125px 0 0 0 #000;
+    color: white;
+}
+
+.leftSide {
+    display: flex;
+    margin-left: 176px;
+}
+
+.rightSide {
+    display: flex;
+    margin-left: 300px;
+}
+
+.container {
+    background-attachment: fixed;
+    background-image: url("telaInicial.jpg");
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+}
+
+.firstPage {
+    background-color: rgba(91, 8, 8, 0.7);
+    border-radius: 10px;
+    width: 900px;
+    height: 500px;
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 280px;
+    backdrop-filter: blur(10px);
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+}
+
+.titleHome {
+    font-size: 40px;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    color: white;
+    margin-top: 10px;
+}
+
+.textHome {
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+    text-align: center;
+    padding: 35px;
+    color: white;
+}
+
+/*Definindo a tela de produtos*/
+#catalogue {
+    background-image: url("cimento.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 100vh;
+}
+
+.products {
+    background-image: url("fundoMadeira.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 1200px;
+    height: 675px;
+    margin-top: 20px;
+    margin-left: 130px;
+    position: absolute;
+    border-radius: 7px;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+
+}
+
+.showcase {
+    background-image: url("linguicaVacuo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    margin-left: 230px;
+    margin-top: 70px;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+    transition: 0.3s;
+}
+
+.showcase:hover {
+    transform: scale(1.1);
+}
+
+.showcase1 {
+    background-image: url("costelaVacuo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    margin-left: 230px;
+    margin-top: 390px;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+    transition: 0.3s;
+}
+
+.showcase1:hover {
+    transform: scale(1.1);
+}
+
+.showcase2 {
+    background-image: url("shortVacuo.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 70px;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+    transition: 0.3s;
+}
+
+.showcase2:hover {
+    transform: scale(1.1);
+}
+
+.showcase3 {
+    background-image: url("tomaVacuo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 390px;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+    transition: 0.3s;
+}
+
+.showcase3:hover {
+    transform: scale(1.1);
+}
+
+.showcase4 {
+    background-image: url("anchoVacuo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    margin-left: 970px;
+    margin-top: 390px;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+    transition: 0.3s;
+}
+
+.showcase4:hover {
+    transform: scale(1.1);
+}
+
+.showcase5 {
+    background-image: url("picanhaVacuo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    margin-left: 970px;
+    margin-top: 70px;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+    transition: 0.3s;
+}
+
+.showcase5:hover {
+    transform: scale(1.1);
+}
+
+
+/*DEFININDO A SELEÇÃO DO BOI*/
+#ox {
+    background-image: url("fundoMadeira.jpg");
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    color: white;
+}
+
+.selectOx {
+    background-image: url("cortes.webp");
+    background-size: cover;
+    width: 800px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-left: 50px;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+}
+
+.Wagyu {
+    width: 220px;
+    height: 220px;
+    background-image: url("wagyu.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-left: 350px;
+    margin-top: 110px;
+    position: absolute;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: white;
+}
+
+.Wagyu:hover {
+    transform: scale(1.1);
+}
+
+.Wagyu h1 {
+    margin-top: 223px;
+    margin-left: 70px;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+}
+
+.Ribeye {
+    width: 220px;
+    height: 220px;
+    background-image: url("ribeye.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 350px;
+    margin-top: 380px;
+    position: absolute;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: white;
+}
+
+.Ribeye h1 {
+    margin-top: 223px;
+    margin-left: 70px;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+}
+
+.Ribeye:hover {
+    transform: scale(1.1);
+}
+
+.Shorizo {
+    width: 220px;
+    height: 220px;
+    background-image: url("chorizo.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 70px;
+    margin-top: 380px;
+    position: absolute;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: white;
+}
+
+.Shorizo h1 {
+    margin-top: 223px;
+    text-align: center;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+}
+
+.Shorizo:hover {
+    transform: scale(1.1);
+}
+
+.Short {
+    width: 220px;
+    height: 220px;
+    background-image: url("short.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 70px;
+    margin-top: 110px;
+    position: absolute;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+    transition: 0.3s;
+}
+
+.Short h1 {
+    margin-top: 223px;
+    text-align: center;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+}
+
+.Short:hover {
+    transform: scale(1.1);
+}
+
+/*Final do boi*/
+
+
+
+/*DEFININDO A SELEÇÃO DO PORCO*/
+#pork {
+    background-image: url("fundoClaro.jpg");
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    color: white;
+
+}
+
+.selectPork {
+    background-image: url("cutPork.png");
+    background-size: cover;
+    width: 800px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-left: 50px;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+}
+
+.TomaHawk {
+    width: 220px;
+    height: 220px;
+    background-image: url("tomahawk.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-left: 350px;
+    margin-top: 110px;
+    position: absolute;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+    transition: 0.3s;
+    color: black;
+}
+
+.TomaHawk h1 {
+    margin-top: 223px;
+    margin-left: 50px;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+}
+
+.TomaHawk:hover {
+    transform: scale(1.1);
+}
+
+.cupSirloin {
+    width: 220px;
+    height: 220px;
+    background-image: url("copaLombo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 350px;
+    margin-top: 380px;
+    position: absolute;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+    transition: 0.3s;
+    color: black;
+}
+
+.cupSirloin h1 {
+    margin-top: 223px;
+    text-align: center;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+}
+
+.cupSirloin:hover {
+    transform: scale(1.1);
+}
+
+.rumpSteak {
+    width: 220px;
+    height: 220px;
+    background-image: url("picanhaSuina.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 70px;
+    margin-top: 380px;
+    position: absolute;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+    transition: 0.3s;
+    color: black;
+}
+
+.rumpSteak h1 {
+    margin-top: 223px;
+    text-align: center;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+}
+
+.rumpSteak:hover {
+    transform: scale(1.1);
+}
+
+.rib {
+    width: 220px;
+    height: 220px;
+    background-image: url("costelaPorco.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 70px;
+    margin-top: 110px;
+    position: absolute;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+    transition: 0.3s;
+    color: black;
+}
+
+.rib h1 {
+    margin-top: 223px;
+    text-align: center;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+}
+
+.rib:hover {
+    transform: scale(1.1);
+}
+
+.pork h1 {
+    text-align: center;
+    margin-top: 227px;
+
+}
+
+/*Final do porco*/
+
+
+/*DEFININDO A SELEÇÃO DAS AVES*/
+#bird {
+    background-image: url("fundoMadeira.jpg");
+    background-size: cover;
+    width: auto;
+    height: 100vh;
+    display: flex;
+    color: white;
+}
+
+.selectBird {
+    background-image: url("chicken.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    margin-left: 50px;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+}
+
+.thigh {
+    width: 220px;
+    height: 220px;
+    background-image: url("coxa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-left: 350px;
+    margin-top: 110px;
+    position: absolute;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: white;
+
+}
+
+.thigh h1 {
+    margin-top: 223px;
+    margin-left: 70px;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+}
+
+.thigh:hover {
+    transform: scale(1.1);
+}
+
+.drumstick {
+    width: 220px;
+    height: 220px;
+    background-image: url("sobrecoxa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 350px;
+    margin-top: 390px;
+    position: absolute;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: white;
+}
+
+.drumstick:hover {
+    transform: scale(1.1);
+}
+
+.drumstick h1 {
+    text-align: center;
+    margin-top: 227px;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+}
+
+.wing {
+    width: 220px;
+    height: 220px;
+    background-color: white;
+    background-image: url("asa.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 70px;
+    margin-top: 390px;
+    position: absolute;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+    transition: 0.3s;
+    color: white;
+    font-size: 17px;
+}
+
+.wing h1 {
+    text-align: center;
+    margin-top: 227px;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+}
+
+.wing:hover {
+    transform: scale(1.1);
+}
+
+.chest {
+    width: 220px;
+    height: 220px;
+    background-image: url("peito.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 70px;
+    margin-top: 110px;
+    position: absolute;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+    transition: 0.3s;
+    color: white;
+    font-size: 17px;
+}
+
+.chest h1 {
+    font-family: "Sedan SC", serif;
+    text-align: center;
+    margin-top: 223px;
+    font-weight: 400;
+}
+
+.chest:hover {
+    transform: scale(1.1);
+}
+
+/*final das aves*/
+
+
+/*Configurando o Accordion*/
+
+
+#faq {
+    width: 100%;
+    height: 100vh;
+    background-image: url("vinho.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.box {
+    border-radius: 5px;
+    width: 400px;
+    height: 30px;
+    background-color: white;
+    margin-left: 850px;
+    margin-top: 60px;
+    position: absolute;
+    text-align: center;
+    box-shadow: 8px 10px 5px #0003;
+    font-family: 'Poppins', sans-serif;
+}
+
+.containe {
+    color: white;
+    box-shadow: 8px 10px 5px #0003;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 120px;
+    margin-left: 800px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.accordion_item {
+    background-color: black;
+    border-radius: 5px;
+}
+
+.accordion_item:hover {
+    opacity: 0.9;
+}
+
+.accordion_header {
+    padding: 9px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+
+}
+
+.accordion_content {
+    margin-left: 50px;
+    margin-right: 15px;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.5s ease, padding 0.5s ease;
+    font-size: 14px;
+}
+
+.accordion_content p {
+    margin: 0;
+}
+
+.active {
+    padding-bottom: 10px;
+}
+
+span,
+.icon {
+    font-weight: 600;
+
+}
+
+p {
+    text-align: justify;
+}
+
+
+/*Configurando o Formulário*/
+
+.boxQuest {
+    display: flex;
+    margin: -620px 150px;
+    border-radius: 10px;
+    position: absolute;
+    width: 450px;
+    height: 500px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 146, 146, 0.164);
+    color: black;
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+
+}
+
+.inputBox input {
+    box-shadow: rgb(37, 37, 37) 0px 5px 15px;
+    border-radius: 5px;
+    border: 1px black solid;
+    padding: 10px;
+    margin: 10px;
+}
+.inputBox label {
+      margin-left: 20px;
+    font-family: "Roboto", sans-serif;
+  }
+.typeSex {
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    padding: 10px;
+  }
+  .typeSex input {
+    display: none;
+  }
+  .typeSex label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .typeSex label::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    border: 3px solid #554430;
+    transition: .5s;
+  }
+  .typeSex label.selected::before {
+    background-color: darkgrey;
+    border: 3px solid #000000;
+  }
+
+  select {
+    appearance: none;
+    outline: 10px red;
+    border: 0;
+    box-shadow: none;
+    flex: 1;
+    padding: 0 1em;
+    color: #fff;
+    background-color: #34495e;
+    
+    cursor: pointer;
+  }
+  select::-ms-expand {
+    display: none;
+  }
+  .select {
+    position: absolute;
+    display: flex;
+    margin-left: 70px;
+    margin-top:-250px;
+    width: 20em;
+    height: 3em;
+    border-radius: .25em;
+    overflow: hidden;
+  }
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: #34495e;
+    transition: .25s all ease;
+    pointer-events: none;
+  }
+  .select:hover::after {
+    color: #f39c12;
+  }
+ 
+  .containers {
+    position : relative;
+    top: 50%;
+    left : 50%;
+    transform:translate(-50%,-50%); 
+  }
+  .down_note {
+      display: flex;
+      justify-content: center;
+  
+  }
+
+.checkbox {
+    margin-left: 60px;
+    margin-top: 60px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.register {
+    margin-left: 60px;
+    margin-top: 10px;
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+}
+.register input{
+    font-family: "Roboto", sans-serif;
+    background-color: darkgrey;
+    color: white;
+    width: 100px;
+    height: 50px;
+    margin-left: 100px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/*Configurando o mapa*/
+
+.map {
+    margin-top: 230px;
+    margin-left: 230px;
+}
+
+/*Configurando o Rodapé*/
+
+.rodape{
+    background-color: rgb(42, 38, 38);
+    width: 100%;
+    height: 20vh;
+    color: white;
+    position: absolute;
+}
+.rodape p{
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+}

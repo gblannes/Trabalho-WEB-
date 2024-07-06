@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>No Ponto</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="header">
+        <div class="leftSide">
+            <ul class="navbar">
+                <a href="#catalogue">
+                    <li>Catálogo</li>
+                </a>
+                <a href="#faq">
+                    <li>Localização</li>
+                </a>
+                <a href="#faq">
+                    <li>Dúvidas</li>
+                </a>
+            </ul>
+        </div>
+        <div class="rightSide">
+            <ul class="navbar">
+                <a href="#ox">
+                    <li>Bovinos</li>
+                </a>
+                <a href="#pork">
+                    <li>Súinos</li>
+                </a>
+                <a href="#bird">
+                    <li>Aves</li>
+                </a>
+            </ul>
+        </div>
+    </div>
+    <section class="container">
+        <div class="firstPage">
+            <div class="titleHome">
+                <h1>Since 2003</h1>
+            </div>
+            <div class="textHome">
+                <p>
+                    A botique de carnes exóticas "No Ponto" é um verdadeiro paraíso para os amantes da alta gastronomia.
+                    Com um compromisso inabalável com a qualidade, a "No Ponto" oferece uma seleção exclusiva de carnes
+                    raras e exóticas, provenientes de fornecedores renomados e com práticas sustentáveis. Cada corte é
+                    escolhido a dedo, garantindo frescor, sabor e a melhor textura.
+                <p>A excelência da "No Ponto" é reconhecida pelo seu selo de qualidade, que atesta a origem e a pureza
+                    de suas carnes. Este selo de excelência não é apenas uma marca, mas uma garantia de que cada produto
+                    atende aos mais altos padrões de controle e qualidade. Seja uma suculenta carne de wagyu, uma
+                    picanha de avestruz ou cortes nobres de javali, a "No Ponto" transforma cada refeição em uma
+                    experiência única e memorável. Venha conhecer e descobrir o sabor da verdadeira sofisticação
+                    carnívora. </p>
+            </div>
+        </div>
+    </section>
+    <section id="catalogue">
+        <div class="products"></div>
+        <div class="showcase"></div>
+        <div class="showcase1"></div>
+        <div class="showcase2"></div>
+        <div class="showcase3"></div>
+        <div class="showcase4"></div>
+        <div class="showcase5"></div>
+        </div>
+    </section>
+    <section id="ox">
+        <div class="selectOx"></div>
+        <div class="panelOx">
+            <div class="Wagyu">
+                <h1>Wagyu</h1>
+            </div>
+            <div class="Ribeye">
+                <h1>Ribeye</h1>
+            </div>
+            <div class="Shorizo">
+                <h1>Shorizo</h1>
+            </div>
+            <div class="Short">
+                <h1>Short</h1>
+            </div>
+        </div>
+    </section>
+    <section id="pork">
+        <div class="selectPork"></div>
+        <div class="panelPork">
+            <div class="TomaHawk">
+                <h1>TomaHawk</h1>
+            </div>
+            <div class="cupSirloin">
+                <h1>CopaLombo</h1>
+            </div>
+            <div class="rumpSteak">
+                <h1>Picanha</h1>
+            </div>
+            <div class="rib">
+                <h1>Costela</h1>
+            </div>
+        </div>
+    </section>
+    <section id="bird">
+        <div class="selectBird"></div>
+        <div class="panelBird">
+            <div class="thigh">
+                <h1>Coxa</h1>
+            </div>
+            <div class="drumstick">
+                <h1>Sobrecoxa</h1>
+            </div>
+            <div class="wing">
+                <h1>Asa</h1>
+            </div>
+            <div class="chest">
+                <h1>Peito</h1>  
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="faq">
+        <div class="box">
+            <h1>Perguntas Frequentes</h1>
+        </div>
+        <div class="containe">
+            <div class="content">
+                <div class="accordion_item" style="background-color: rgb(42, 38, 38);">
+                    <div class="accordion_header">
+                        <span>Quando chega novos produtos?</span>
+                        <div class="icon">🡫</div>
+                    </div>
+                    <div class="accordion_content">
+                        <p>Todas as quintas-feiras novos produtos.</p>
+                    </div>
+                </div>
+                <div class="accordion_item" style="background-color: rgb(42, 38, 38);;">
+                    <div class="accordion_header">
+                        <span>Vocês entregam em casa?</span>
+                        <div class="icon">🡫</div>
+                    </div>
+                    <div class="accordion_content">
+                        <p>Nas compras acima de R$50,00 sua encomenda é entregue sem custos adicionais no conforto do
+                            seu lar, estando ele dentro da região metropolitana do Rio De Janeiro.</p>
+                    </div>
+                </div>
+                <div class="accordion_item" style="background-color: rgb(42, 38, 38);;">
+                    <div class="accordion_header">
+                        <span>Vocês entregam aos finais de semana?</span>
+                        <div class="icon"></div>
+                    </div>
+                    <div class="accordion_content">
+                        <p>Não, nossas entregas ocorrem de segunda a sexta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="boxQuest">
+        <form method='post' action="forms.py">
+            <div class="inputBox">
+                <label>Nome:</label>
+                <input type="text" size=25 name="none" maxlength=30 placeholder="Digite seu nome" required>
+            </div>
+            <div class="inputBox">
+                <label>E-mail: <input type='email' name='email' size=25 placeholder="Digite o seu e-mail"
+                        required /></label>
+            </div>
+            <div class="inputBox">
+                <label>Telefone: <input type="tel" name="tel" placeholder="Digite o seu telefone"></label>
+            </div>
+            <div class="typeSex">
+                Sexo:
+                <input id="m" type='radio' name='sexof' onclick="colorClick(this)">
+                <label for='m'>Masculino</label>
+
+                <input id="f" type='radio' name='sexof' onclick="colorClick(this)">
+                <label for='f'>Feminino</label>
+
+                <input id="o" type='radio' name='sexof' onclick="colorClick(this)">
+                <label for='o'>Não Informar</label>
+            </div>
+             <div class="containers">
+                <div class="select">
+                    <select>
+                        <option value="1">Bovino</option>
+                        <option value="2">Suíno</option>
+                        <option value="3">Aves</option>
+                        <option value="4">Exótico</option>
+                    </select>
+                </div>
+            </div>
+            <div class="checkbox">
+                Deseja receber informações por:
+                    <br><label><input type='checkbox' name='interesse' />Todos os meios</label></br>
+                    <label><input type='checkbox' name='interesse' />SMS</label></br>
+                    <label><input type='checkbox' name='interesse' />E-mail</label></br>
+                    <label><input type='checkbox' name='interesse' />Ligação</label>
+
+            </div>
+            <div class="register">
+                <input type="submit" value="Cadastrar">
+            </div>
+        </form>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14703.650931546483!2d-43.10248549505824!3d-22.87968188597194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9983873b9914e9%3A0x641c5d00e4c13dd8!2sAlameda%20S%C3%A3o%20Boaventura%2C%20446%20-%20Fonseca%2C%20Niter%C3%B3i%20-%20RJ%2C%2024120-191!5e0!3m2!1spt-BR!2sbr!4v1718719536631!5m2!1spt-BR!2sbr"
+                width="650" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class = "rodape">
+                <p>Condições De Uso  |  Notificação de Privacidade  |  Cookies  |  Anúncios Baseados em Interesses</p>
+                <p>CNPJ:  00.146.253/0001-90</p>
+                <p>Endereço: Alameda São Boaventura, 446</p>
+                <p>© Direitos Reservados</p>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
